@@ -1,0 +1,31 @@
+<div class="centered-content">
+  <div class="white-box">
+    <h1 class="title has-text-primary">S'inscrire</h1>
+    <div class="field">
+      <p class="control has-icons-left has-icons-right">
+        <input #emailInput class="input has-background-light" type="email" placeholder="Email">
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
+      </p>
+    </div>
+    <div class="field">
+      <p class="control has-icons-left">
+        <input #pwInput class="input has-background-light" type="password" placeholder="Mot de passe">
+        <span class="icon is-small is-left">
+          <i class="fas fa-lock"></i>
+        </span>
+      </p>
+    </div>
+    <div class="field is-flex" style="justify-content: center; margin-top: 20px;">
+      <p class="control">
+        <button class="button is-success has-text-white" (click)="onSignupButtonClicked(emailInput.value, pwInput.value)">
+          S'inscrire
+        </button>
+      </p>
+    </div>
+
+    <p class="has-text-grey has-text-centered">Vous avez déjà un compte ?<br><a routerLink="/login">Se connecter</a> maintenant !</p>
+    
+  </div>
+</div>
